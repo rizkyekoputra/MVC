@@ -14,7 +14,7 @@
     <div> 
         @{
             MVC.Models.Employee emp = (MVC.Models.Employee)
-                ViewData["Employee"];
+                ViewBag.Employee;
         }
         <b>Employee Details </b><br />
         Employee Name : @emp.FirstName @emp.LastName <br />
