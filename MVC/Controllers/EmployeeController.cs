@@ -61,12 +61,14 @@ namespace MVC.Controllers
             return View("CreateEmployee");
         }
 
-        public ActionResult SaveEmployee([ModelBinder(typeof(MyEmployeeModelBinder))]Employee e, string BtnSubmit)
+        public ActionResult SaveEmployee(Employee e, string BtnSubmit)
         {
             switch(BtnSubmit)
             {
                 case "Save Employee":
-                    return Content(e.FirstName + "|" + e.LastName + "|" + e.Salary);
+                    EmployeeBusinessLayer empBal = new EmployeeBusinessLayer();
+                    empBal.SaveEmployee(e);
+                    return RedirectToAction("Index");
                 case "Cancel":
                     return RedirectToAction("Index");
             }
