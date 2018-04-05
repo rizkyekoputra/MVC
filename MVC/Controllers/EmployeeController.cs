@@ -61,7 +61,7 @@ namespace MVC.Controllers
             return View("CreateEmployee");
         }
 
-        public ActionResult SaveEmployee(Employee e, string BtnSubmit)
+        public ActionResult SaveEmployee([ModelBinder(typeof(MyEmployeeModelBinder))]Employee e, string BtnSubmit)
         {
             switch(BtnSubmit)
             {
