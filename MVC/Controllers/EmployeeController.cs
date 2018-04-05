@@ -18,7 +18,7 @@ namespace MVC.Controllers
         }
 
     }
-    public class TestController : Controller
+    public class EmployeeController : Controller
     {
         public Customer GetCustomer()
         {
@@ -28,7 +28,7 @@ namespace MVC.Controllers
             return c;
         }
 
-        public ActionResult GetView()
+        public ActionResult Index()
         {
             EmployeeListViewModel employeeListViewModel = new EmployeeListViewModel();
 
@@ -53,8 +53,7 @@ namespace MVC.Controllers
                 empViewModels.Add(empViewModel);
             }
             employeeListViewModel.Employees = empViewModels;
-            employeeListViewModel.UserName = "Admin";
-            return View("MyView", employeeListViewModel);
+            return View("Index", employeeListViewModel);
         }
     }
 }
