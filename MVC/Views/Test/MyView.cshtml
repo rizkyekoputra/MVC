@@ -2,6 +2,7 @@
 @{
     Layout = null;
 }
+@model MVC.Models.Employee
 
 <!DOCTYPE html>
 
@@ -11,14 +12,22 @@
     <title>MyView</title>
 </head>
 <body>
-    <div> 
-        @{
-            MVC.Models.Employee emp = (MVC.Models.Employee)
-                ViewBag.Employee;
-        }
+    <div>
         <b>Employee Details </b><br />
-        Employee Name : @emp.FirstName @emp.LastName <br />
-        Employee Salary: @emp.Salary.ToString("C")
+        Employee Name : @Model.FirstName @Model.LastName <br />
+        @if (Model.Salary > 15000)
+        {
+            <span style="background-color:yellow">
+                Employee Salary: @Model.Salary.ToString("C")
+            </span>
+        }
+        else
+        {
+            <span style="background-color:green">
+
+                Employee Salary: @Model.Salary.ToString("C")
+            </span>
+        }
     </div>
 </body>
 </html>
