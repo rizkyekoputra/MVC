@@ -55,5 +55,10 @@ namespace MVC.Controllers
             employeeListViewModel.Employees = empViewModels;
             return View("Index", employeeListViewModel);
         }
+
+        public ActionResult AddNew()
+        {
+            return View("CreateEmployee");
+        }
     }
 }
