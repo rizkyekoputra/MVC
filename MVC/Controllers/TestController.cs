@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVC.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -28,6 +29,11 @@ namespace MVC.Controllers
 
         public ActionResult GetView()
         {
+            Employee emp = new Employee();
+            emp.FirstName = "Sukesh";
+            emp.LastName = "Marla";
+            emp.Salary = 20000;
+            ViewData["Employee"] = emp;
             return View("MyView");
         }
     }
