@@ -51,3 +51,7 @@ c:\users\e460\documents\visual studio 2015\Projects\MVC\MVC\bin\Newtonsoft.Json.
 c:\users\e460\documents\visual studio 2015\Projects\MVC\MVC\obj\Debug\MVC.csprojResolveAssemblyReference.cache
 c:\users\e460\documents\visual studio 2015\Projects\MVC\MVC\obj\Debug\MVC.dll
 c:\users\e460\documents\visual studio 2015\Projects\MVC\MVC\obj\Debug\MVC.pdb
+C:\Users\E460\Documents\Visual Studio 2015\Projects\MVC\MVC\bin\EntityFramework.dll
+C:\Users\E460\Documents\Visual Studio 2015\Projects\MVC\MVC\bin\EntityFramework.SqlServer.dll
+C:\Users\E460\Documents\Visual Studio 2015\Projects\MVC\MVC\bin\EntityFramework.xml
+C:\Users\E460\Documents\Visual Studio 2015\Projects\MVC\MVC\bin\EntityFramework.SqlServer.xml
