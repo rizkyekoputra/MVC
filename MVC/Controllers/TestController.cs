@@ -26,10 +26,9 @@ namespace MVC.Controllers
             return c;
         }
 
-        [NonAction]
-        public string SimpleMethod()
+        public ActionResult GetView()
         {
-            return "Hi, I am not action method";
+            return View("MyView");
         }
     }
 }
