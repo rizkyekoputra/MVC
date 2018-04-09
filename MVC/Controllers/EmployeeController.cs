@@ -65,7 +65,13 @@ namespace MVC.Controllers
         [AdminFilter]
         public ActionResult AddNew()
         {
-            return View("CreateEmployee", new CreateEmployeeViewModel());
+            CreateEmployeeViewModel employeeListViewModel = new CreateEmployeeViewModel();
+            employeeListViewModel.FooterData = new FooterViewModel();
+            employeeListViewModel.FooterData.CompanyName = "StepByStepSchools";
+            employeeListViewModel.FooterData.Year = DateTime.Now.Year.ToString();
+            employeeListViewModel.UserName = User.Identity.Name;
+            return View("CreateEmployee", employeeListViewModel);
+
         }
 
         [ValidateAntiForgeryToken]
@@ -88,10 +94,15 @@ namespace MVC.Controllers
                         if (e.Salary.HasValue)
                         {
                             vm.Salary = e.Salary.ToString();
-                        } else
+                        }
+                        else
                         {
                             vm.Salary = ModelState["Salary"].Value.AttemptedValue;
                         }
+                        vm.FooterData = new FooterViewModel();
+                        vm.FooterData.CompanyName = "StepByStepSchools";
+                        vm.FooterData.Year = DateTime.Now.Year.ToString();
+                        vm.UserName = User.Identity.Name;
                         return View("CreateEmployee", vm);
                     }
                     
