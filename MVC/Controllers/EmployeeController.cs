@@ -28,6 +28,7 @@ namespace MVC.Controllers
             return c;
         }
 
+        [Authorize]
         public ActionResult Index()
         {
             EmployeeListViewModel employeeListViewModel = new EmployeeListViewModel();
