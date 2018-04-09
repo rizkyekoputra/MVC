@@ -68,6 +68,7 @@ namespace MVC.Controllers
             return View("CreateEmployee", new CreateEmployeeViewModel());
         }
 
+        [ValidateAntiForgeryToken]
         [AdminFilter]
         public ActionResult SaveEmployee(Employee e, string BtnSubmit)
         {
