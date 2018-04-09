@@ -1,4 +1,5 @@
-﻿using MVC.Models;
+﻿using MVC.Filters;
+using MVC.Models;
 using MVC.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -61,11 +62,13 @@ namespace MVC.Controllers
             return View("Index", employeeListViewModel);
         }
 
+        [AdminFilter]
         public ActionResult AddNew()
         {
             return View("CreateEmployee", new CreateEmployeeViewModel());
         }
 
+        [AdminFilter]
         public ActionResult SaveEmployee(Employee e, string BtnSubmit)
         {
             switch(BtnSubmit)
@@ -95,6 +98,18 @@ namespace MVC.Controllers
                     return RedirectToAction("Index");
             }
             return new EmptyResult();
+        }
+
+        [ChildActionOnly]
+        public ActionResult GetAddNewLink()
+        {
+            if (Convert.ToBoolean(Session["IsAdmin"]))
+            {
+                return PartialView("AddNewLink");
+            } else
+            {
+                return new EmptyResult();
+            }
         }
     }
 }
