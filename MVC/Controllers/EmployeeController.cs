@@ -30,10 +30,10 @@ namespace MVC.Controllers
         }
 
         [Authorize]
+        [HeaderFooterFilter]
         public ActionResult Index()
         {
             EmployeeListViewModel employeeListViewModel = new EmployeeListViewModel();
-            employeeListViewModel.UserName = User.Identity.Name;
 
             EmployeeBusinessLayer empBal = new EmployeeBusinessLayer();
             List<Employee> employees = empBal.GetEmployees();
@@ -56,26 +56,21 @@ namespace MVC.Controllers
                 empViewModels.Add(empViewModel);
             }
             employeeListViewModel.Employees = empViewModels;
-            employeeListViewModel.FooterData = new FooterViewModel();
-            employeeListViewModel.FooterData.CompanyName = "StepByStepSchools";
-            employeeListViewModel.FooterData.Year = DateTime.Now.Year.ToString();
             return View("Index", employeeListViewModel);
         }
 
         [AdminFilter]
+        [HeaderFooterFilter]
         public ActionResult AddNew()
         {
             CreateEmployeeViewModel employeeListViewModel = new CreateEmployeeViewModel();
-            employeeListViewModel.FooterData = new FooterViewModel();
-            employeeListViewModel.FooterData.CompanyName = "StepByStepSchools";
-            employeeListViewModel.FooterData.Year = DateTime.Now.Year.ToString();
-            employeeListViewModel.UserName = User.Identity.Name;
             return View("CreateEmployee", employeeListViewModel);
 
         }
 
         [ValidateAntiForgeryToken]
         [AdminFilter]
+        [HeaderFooterFilter]
         public ActionResult SaveEmployee(Employee e, string BtnSubmit)
         {
             switch(BtnSubmit)
@@ -99,10 +94,6 @@ namespace MVC.Controllers
                         {
                             vm.Salary = ModelState["Salary"].Value.AttemptedValue;
                         }
-                        vm.FooterData = new FooterViewModel();
-                        vm.FooterData.CompanyName = "StepByStepSchools";
-                        vm.FooterData.Year = DateTime.Now.Year.ToString();
-                        vm.UserName = User.Identity.Name;
                         return View("CreateEmployee", vm);
                     }
                     
