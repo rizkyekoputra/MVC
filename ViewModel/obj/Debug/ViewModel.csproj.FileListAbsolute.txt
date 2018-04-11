@@ -1,0 +1,4 @@
+C:\Users\E460\Documents\Visual Studio 2015\Projects\MVC\ViewModel\bin\Debug\ViewModel.dll
+C:\Users\E460\Documents\Visual Studio 2015\Projects\MVC\ViewModel\bin\Debug\ViewModel.pdb
+C:\Users\E460\Documents\Visual Studio 2015\Projects\MVC\ViewModel\obj\Debug\ViewModel.dll
+C:\Users\E460\Documents\Visual Studio 2015\Projects\MVC\ViewModel\obj\Debug\ViewModel.pdb

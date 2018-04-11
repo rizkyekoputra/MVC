@@ -1,6 +1,6 @@
-﻿using MVC.Filters;
-using MVC.Models;
-using MVC.ViewModels;
+﻿using BusinessLayer;
+using Model;
+using MVC.Filters;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -9,6 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using ViewModel;
 
 namespace MVC.Controllers
 {

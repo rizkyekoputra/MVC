@@ -1,0 +1,14 @@
+C:\Users\E460\Documents\Visual Studio 2015\Projects\MVC\BusinessLayer\bin\Debug\BusinessLayer.dll.config
+C:\Users\E460\Documents\Visual Studio 2015\Projects\MVC\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\E460\Documents\Visual Studio 2015\Projects\MVC\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\E460\Documents\Visual Studio 2015\Projects\MVC\BusinessLayer\bin\Debug\BusinessEntities.dll
+C:\Users\E460\Documents\Visual Studio 2015\Projects\MVC\BusinessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\E460\Documents\Visual Studio 2015\Projects\MVC\BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\E460\Documents\Visual Studio 2015\Projects\MVC\BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\E460\Documents\Visual Studio 2015\Projects\MVC\BusinessLayer\bin\Debug\BusinessEntities.pdb
+C:\Users\E460\Documents\Visual Studio 2015\Projects\MVC\BusinessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\E460\Documents\Visual Studio 2015\Projects\MVC\BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\E460\Documents\Visual Studio 2015\Projects\MVC\BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\E460\Documents\Visual Studio 2015\Projects\MVC\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\E460\Documents\Visual Studio 2015\Projects\MVC\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\E460\Documents\Visual Studio 2015\Projects\MVC\BusinessLayer\obj\Debug\BusinessLayer.pdb

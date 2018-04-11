@@ -1,0 +1,4 @@
+C:\Users\E460\Documents\Visual Studio 2015\Projects\MVC\BusinessEntities\bin\Debug\BusinessEntities.dll
+C:\Users\E460\Documents\Visual Studio 2015\Projects\MVC\BusinessEntities\bin\Debug\BusinessEntities.pdb
+C:\Users\E460\Documents\Visual Studio 2015\Projects\MVC\BusinessEntities\obj\Debug\BusinessEntities.dll
+C:\Users\E460\Documents\Visual Studio 2015\Projects\MVC\BusinessEntities\obj\Debug\BusinessEntities.pdb

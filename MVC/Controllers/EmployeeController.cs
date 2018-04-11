@@ -1,11 +1,12 @@
-﻿using MVC.Filters;
-using MVC.Models;
-using MVC.ViewModels;
+﻿using BusinessLayer;
+using Model;
+using MVC.Filters;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using ViewModel;
 
 namespace MVC.Controllers
 {
